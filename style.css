@@ -1,0 +1,94 @@
+/* Basic Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+header {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+#user-selection {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#user-selection select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.complete-btn {
+    background-color: #388e3c;
+    color: white;
+}
+
+.complete-btn.disabled, .redeem-btn.disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.redeem-btn {
+    background-color: #1976d2;
+    color: white;
+}
+
+#total-points {
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
