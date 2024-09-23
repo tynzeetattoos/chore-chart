@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Family Chore Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Family Chore Chart</h1>
+    </header>
+
+    <main>
+        <!-- User Selection -->
+        <section id="user-selection">
+            <label for="user-select">Select Child:</label>
+            <select id="user-select">
+                <option value="skylar">Skylar (11)</option>
+                <option value="adyson">Adyson (5)</option>
+                <option value="lucas">Lucas (3)</option>
+            </select>
+        </section>
+
+        <!-- Chore List -->
+        <section id="chore-list">
+            <h2>Chores for <span id="user-name">Skylar</span></h2>
+            <ul id="chores">
+                <!-- Chore items will be generated here -->
+            </ul>
+        </section>
+
+        <!-- Points and Rewards -->
+        <section id="points-rewards">
+            <div id="points">
+                <p>Total Points: <span id="total-points">0</span></p>
+            </div>
+            <div id="rewards-section">
+                <h2>Rewards</h2>
+                <ul id="rewards">
+                    <!-- Reward items will be generated here -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
