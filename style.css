@@ -1,94 +1,64 @@
-/* Basic Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f6f9;
 }
-
 header {
-    background-color: #6a1b9a;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #34495e;
+  color: white;
+  padding: 1em;
+  text-align: center;
 }
-
-main {
-    padding: 20px;
+h2, h3 {
+  color: #34495e;
 }
-
-h1, h2 {
-    margin-bottom: 20px;
+#app {
+  margin: 20px;
 }
-
-#user-selection {
-    margin-bottom: 20px;
-    text-align: center;
+.card {
+  background-color: white;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-
-#user-selection select {
-    padding: 10px;
-    font-size: 16px;
+input, select, button {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
-
-section {
-    margin-bottom: 30px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    background-color: white;
-    margin-bottom: 10px;
-    padding: 15px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.completed span {
-    text-decoration: line-through;
-    color: gray;
-}
-
 button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #34495e;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
-
-.complete-btn {
-    background-color: #388e3c;
-    color: white;
+button:hover {
+  background-color: #2c3e50;
 }
-
-.complete-btn.disabled, .redeem-btn.disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
+.logout-button {
+  background-color: #e74c3c;
 }
-
-.redeem-btn {
-    background-color: #1976d2;
-    color: white;
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-#total-points {
-    font-weight: bold;
+.task button {
+  width: auto;
+  padding: 0.3em 0.6em;
 }
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    li {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    button {
-        margin-top: 10px;
-        width: 100%;
-    }
+.chart-container {
+  position: relative;
+  height: 40vh;
+  width: 80vw;
+}
+@media (min-width: 768px) {
+  #app {
+    margin: 40px auto;
+    max-width: 800px;
+  }
 }
