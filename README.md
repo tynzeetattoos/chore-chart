@@ -1,4 +1,4 @@
-Family Chore Chart Web App
+Family Chore Chart Web App: 
 An interactive, mobile-friendly chore chart web application designed to help distribute household chores among your children. This app aims to instill cleanliness and responsibility in your children while reducing the cleaning workload on you and your wife.
 
 Demo
